@@ -489,15 +489,15 @@ Grid 5.00 mm&lt;p&gt;
 <attribute name="VALUE" x="48.26" y="64.897" size="1.778" layer="96"/>
 <attribute name="NAME" x="50.8" y="69.469" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X2" gate="-1" x="2.54" y="43.18" smashed="yes">
-<attribute name="NAME" x="2.54" y="44.069" size="1.778" layer="95" rot="R180"/>
+<instance part="X2" gate="-1" x="81.28" y="27.94" smashed="yes" rot="R180">
+<attribute name="NAME" x="81.28" y="27.051" size="1.778" layer="95"/>
 </instance>
-<instance part="X2" gate="-2" x="2.54" y="38.1" smashed="yes">
-<attribute name="NAME" x="2.54" y="38.989" size="1.778" layer="95" rot="R180"/>
+<instance part="X2" gate="-2" x="81.28" y="22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="81.28" y="21.971" size="1.778" layer="95"/>
 </instance>
-<instance part="X2" gate="-3" x="2.54" y="33.02" smashed="yes">
-<attribute name="VALUE" x="0" y="29.337" size="1.778" layer="96"/>
-<attribute name="NAME" x="2.54" y="33.909" size="1.778" layer="95" rot="R180"/>
+<instance part="X2" gate="-3" x="81.28" y="17.78" smashed="yes" rot="R180">
+<attribute name="VALUE" x="83.82" y="21.463" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="81.28" y="16.891" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -515,12 +515,6 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="27.94" y1="48.26" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="48.26" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
 <junction x="35.56" y="83.82"/>
-<junction x="35.56" y="48.26"/>
-<pinref part="X2" gate="-1" pin="KL"/>
-<wire x1="7.62" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="43.18" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="35.56" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="35.56" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -536,15 +530,9 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="43.18" y1="50.8" x2="43.18" y2="66.04" width="0.1524" layer="91"/>
 <junction x="43.18" y="66.04"/>
 <pinref part="X2" gate="-3" pin="KL"/>
-<wire x1="7.62" y1="33.02" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="17.78" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="33.02" x2="43.18" y2="50.8" width="0.1524" layer="91"/>
 <junction x="43.18" y="50.8"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="SV2" gate="1" pin="6"/>
-<wire x1="27.94" y1="25.4" x2="40.64" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
