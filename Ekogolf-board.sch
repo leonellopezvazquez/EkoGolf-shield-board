@@ -4908,6 +4908,8 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="VCC" device=""/>
 <part name="330" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
 <part name="INDEX" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TLLY4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
+<part name="1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1"/>
+<part name="INDEX1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="TLLY4400" device="" package3d_urn="urn:adsk.eagle:package:15797/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -4990,6 +4992,14 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <instance part="INDEX" gate="G$1" x="124.46" y="-50.8" smashed="yes">
 <attribute name="NAME" x="128.016" y="-55.372" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="130.175" y="-55.372" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="1" gate="G$1" x="38.1" y="2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.6014" y="-1.27" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="41.402" y="-1.27" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="INDEX1" gate="G$1" x="38.1" y="-25.4" smashed="yes">
+<attribute name="NAME" x="41.656" y="-29.972" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="43.815" y="-29.972" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -5090,6 +5100,10 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <pinref part="SV1" gate="1" pin="7"/>
 <wire x1="27.94" y1="53.34" x2="43.18" y2="53.34" width="0.1524" layer="91"/>
 <junction x="43.18" y="53.34"/>
+<pinref part="INDEX1" gate="G$1" pin="C"/>
+<wire x1="38.1" y1="-30.48" x2="38.1" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="-55.88" x2="43.18" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="43.18" y="-55.88"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5123,6 +5137,21 @@ Source: &lt;a href="http://www.farnell.com/datasheets/391098.pdf"&gt; Data sheet
 <pinref part="INDEX" gate="G$1" pin="A"/>
 <pinref part="330" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="-48.26" x2="124.46" y2="-45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="SV2" gate="1" pin="1"/>
+<pinref part="1" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="12.7" x2="38.1" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="INDEX1" gate="G$1" pin="A"/>
+<pinref part="1" gate="G$1" pin="1"/>
+<wire x1="38.1" y1="-22.86" x2="38.1" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
